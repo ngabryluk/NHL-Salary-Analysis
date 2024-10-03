@@ -1,0 +1,108 @@
+
+Basic Stats:
+
+Pos: Player’s position (e.g., F for forward, D for defenseman, G for goalie).
+
+CapHit: The player's salary cap hit for the team, indicating how much of their salary counts against the team's cap for that season.
+
+GP: Games Played – The total number of games the player has participated in.
+
+G: Goals – The number of goals the player has scored.
+
+A: Assists – The number of times the player has assisted on a goal.
+
+PTS: Points – The sum of goals and assists.
+
++/-: Plus-Minus – Tracks the player’s goal differential while on the ice (goals for minus goals against). Positive values indicate more goals scored by the player’s team while they are on the ice.
+
+PIM: Penalty Minutes – The total time the player has spent in the penalty box.
+
+EVG: Even-Strength Goals – The number of goals scored while both teams have the same number of players on the ice.
+
+PPG: Power-Play Goals – Goals scored while the player's team has a numerical advantage due to an opponent's penalty.
+
+SHG: Shorthanded Goals – Goals scored while the player's team is playing with fewer players than the opposing team due to a penalty.
+
+GWG: Game-Winning Goals – Goals that ultimately win the game for the player’s team (Ex. In a game where the score finished as 4-1, the player that scored the second goal is credited with the game-winning goal).
+
+EV: Even-Strength Assists – The total number of assists at even strength.
+
+PP: Power-Play Assists – The total number of assists on the power play.
+
+SH: Shorthanded Assists – The total number of assists scored while shorthanded.
+
+SOG: Shots on Goal – The total number of shots the player has taken that require a save or result in a goal.
+
+SPCT: Shooting Percentage – The percentage of shots that result in goals (Goals/Shots on Goal).
+
+TSA: Total Shots Attempted – The total number of shot attempts made by the player (includes blocked shots and misses).
+
+
+
+Time on Ice (TOI) Stats:
+
+TOI_inSec: Total Time on Ice in Seconds – The total amount of time the player has spent on the ice in seconds.
+
+AvgTOI_inSec: Average Time on Ice per Game in Seconds – The player’s average time on ice per game.
+
+
+
+Faceoff Stats:
+
+FOW: Faceoffs Won – The number of times the player has won a faceoff.
+
+FOL: Faceoffs Lost – The number of times the player has lost a faceoff.
+
+FO%: Faceoff Percentage – The percentage of faceoffs won by the player (Faceoffs Won/Total Faceoffs).
+
+
+
+Defensive Stats:
+
+BL: Blocked Shots – The number of shots the player has blocked.
+
+HIT: Hits – The number of times the player has delivered a body check to an opposing player.
+
+TAKE: Takeaways – The number of times the player steals the puck from an opponent.
+
+GIVE: Giveaways – The number of times the player has lost possession of the puck to an opponent.
+
+
+
+Advanced Stats (Corsi and Fenwick stats are calculated at even strength):
+
+CF: Corsi For – The total number of shot attempts (on goal, missed, or blocked) by the player’s team while the player is on the ice.
+
+CA: Corsi Against – The total number of shot attempts (on goal, missed, or blocked) against the player’s team while the player is on the ice.
+
+CF%: Corsi For Percentage – The percentage of shot attempts that are for the player’s team while they’re on the ice. It’s calculated as Corsi For / (Corsi For + Corsi Against). A value above 50% indicates the team was controlling the puck more often than not with this player on the ice.
+
+CF% rel: Relative Corsi For Percentage – The player’s Corsi For percentage relative to the team’s performance when they are not on the ice. Calculated as On-ice Corsi For % - Off-ice Corsi For %. It shows if the team performs better or worse with the player on the ice as opposed to that player not being on the ice.
+
+FF: Fenwick For – Similar to Corsi, but only includes unblocked shots (on goal, missed) by the player’s team while they are on the ice.
+
+FA: Fenwick Against – The total number of unblocked shot attempts (on goal, missed) against the player’s team while the player is on the ice.
+
+FF%: Fenwick For Percentage – The percentage of unblocked shot (on goal, missed) attempts for the player’s team while they are on the ice (Fenwick For / (Fenwick For + Fenwick Against)). Above 50% means the team was controlling the puck more often than not with this player on the ice in this situation.
+
+FF% rel: Relative Fenwick For Percentage – The player’s Fenwick For percentage relative to the team’s performance when they are not on the ice. Calculated as On-ice Fenwick For % - Off-ice Fenwick For %.
+
+oiSH%: Team On-Ice Shooting Percentage – The shooting percentage of the player's team while they are on the ice (goals scored by the team divided by shots on goal).
+
+oiSV%: Team On-Ice Save Percentage – The save percentage of the player's team while they are on the ice (saves made by the team divided by shots faced).
+
+PDO: PDO (On-Ice Performance Indicator) – The sum of on-ice shooting percentage and on-ice save percentage. A PDO of 100% is considered average, while higher or lower numbers may indicate good or bad luck.
+
+oZS%: Offensive Zone Start Percentage – The percentage of faceoffs the player takes in the offensive zone.
+
+dZS%: Defensive Zone Start Percentage – The percentage of faceoffs the player takes in the defensive zone.
+
+
+
+Miscellaneous:
+
+E+/-: Expected Plus-Minus – A variation of plus-minus that accounts for the quality of shots for and against while the player is on the ice at even strength. It's based on where the shots are coming from, compared to the league-wide shooting percentage for that shot location.
+
+SAtt.: Total shots sttempted in all situations – The total number of shot attempts, including those that miss or are blocked.
+
+Thru%: Thru Percentage – The percentage of the player's shot attempts that get through to the net.
